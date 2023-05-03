@@ -1,0 +1,53 @@
+.app {
+  margin-left: 40%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.cost-all {
+  margin-left: 5px;
+}
+
+.cost-get {
+  width: 180px;
+}
+
+.btn-danger {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.list-get-cost {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+}
+
+.list-mission1,
+.list-mission2,
+.list-mission3,
+.list-mission4 {
+  cursor: pointer;
+}
+.list-mission1:hover,
+.list-mission2:hover,
+.list-mission3:hover,
+.list-mission4:hover {
+  background-color: #ccc;
+}
+
+.info-mission1,
+.info-mission2,
+.info-mission3,
+.info-mission4 {
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 100px;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

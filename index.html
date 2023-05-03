@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css//reset.css" />
+    <link rel="stylesheet" href="./css//main.css" />
+    <title>Chơi game ngay, có tiền liền tay</title>
+  </head>
+  <body>
+    <div class="card info-mission1" style="width: 18rem">
+      <h1>Thông tin nhiệm vụ 1</h1>
+      <ul class="list-group list-group-flush list-mission1">
+        <li class="list-group-item"><b>Mã Nhiệm Vụ</b> 01</li>
+        <li class="list-group-item"><b>Tên nhiệm vụ:</b> Review các game</li>
+        <li class="list-group-item">
+          <b>Thời gian hoàn thành:</b> <span class="info-date"></span>
+        </li>
+        <li class="list-group-item"><b>Trạng Thái:</b> Hoàn Thành</li>
+        <li class="list-group-item">
+          <b>Số tiền nhận được:</b> <span class="info-cost1"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="card info-mission2" style="width: 18rem">
+      <h1>Thông tin nhiệm vụ 2</h1>
+      <ul class="list-group list-group-flush list-mission2">
+        <li class="list-group-item"><b>Mã Nhiệm Vụ</b> 02</li>
+        <li class="list-group-item"><b>Tên nhiệm vụ:</b> Chơi hơn 2 game</li>
+        <li class="list-group-item">
+          <b>Thời gian hoàn thành:</b> <span class="info-date"></span>
+        </li>
+        <li class="list-group-item"><b>Trạng Thái:</b> Hoàn Thành</li>
+        <li class="list-group-item">
+          <b>Số tiền nhận được:</b> <span class="info-cost2"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="card info-mission3" style="width: 18rem">
+      <h1>Thông tin nhiệm vụ 3</h1>
+      <ul class="list-group list-group-flush list-mission3">
+        <li class="list-group-item"><b>Mã Nhiệm Vụ</b> 03</li>
+        <li class="list-group-item"><b>Tên nhiệm vụ:</b> Share link</li>
+        <li class="list-group-item">
+          <b>Thời gian hoàn thành:</b> <span class="info-date"></span>
+        </li>
+        <li class="list-group-item"><b>Trạng Thái:</b> Hoàn Thành</li>
+        <li class="list-group-item">
+          <b>Số tiền nhận được:</b> <span class="info-cost3"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="card info-mission4" style="width: 18rem">
+      <h1>Thông tin nhiệm vụ 4</h1>
+      <ul class="list-group list-group-flush list-mission4">
+        <li class="list-group-item"><b>Mã Nhiệm Vụ</b> 04</li>
+        <li class="list-group-item"><b>Tên nhiệm vụ:</b> Mời bạn bè</li>
+        <li class="list-group-item">
+          <b>Thời gian hoàn thành:</b> <span class="info-date"></span>
+        </li>
+        <li class="list-group-item"><b>Trạng Thái:</b> Hoàn Thành</li>
+        <li class="list-group-item">
+          <b>Số tiền nhận được:</b> <span class="info-cost4"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="app">
+      <div class="card" style="width: 18rem">
+        <img src="./img/images.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Số dư của tôi:</h5>
+          <span class="card-text cost-all"><b></b></span>
+          <b>&#8363;</b>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item list-get-cost">
+            Rút tiền:
+            <input type="text" class="cost-get" /> <b>&#8363;</b>
+            <button type="button" class="btn btn-danger">MAX</button>
+          </li>
+          <li class="list-group-item list-mission1">
+            &#9876; Nhiệm vụ 1 +<span class="cost-mission1"></span>&#8363;
+            &#10148;
+          </li>
+          <li class="list-group-item list-mission2">
+            &#9876; Nhiệm vụ 2 +<span class="cost-mission2"></span>&#8363;
+            &#10148;
+          </li>
+          <li class="list-group-item list-mission3">
+            &#9876; Nhiệm vụ 3 +<span class="cost-mission3"></span>&#8363;
+            &#10148;
+          </li>
+          <li class="list-group-item list-mission4">
+            &#9876; Nhiệm vụ 4 +<span class="cost-mission4"></span>&#8363;
+            &#10148;
+          </li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-success">RÚT</button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
